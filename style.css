@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.form-container {
+    border: solid;
+    padding: 1rem;
+    
+}
+
+
+.form-display {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    padding: 1rem;   
+}
+
+input {
+    margin-bottom: 50px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.card {
+    border: solid;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.screen-name {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
+
+.card-header {
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.card-enlarge {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.card-enlarge.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.card-info {
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    max-width: 600px;
+    padding: 0 2rem;
+    position: relative;
+    width: 100%;
+}
+
+.card-info h1{
+    text-align: center;
+}
+
+.card-info .close-popup {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 0.01rem;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    margin-top: 15px;
+}
+
+.like-btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+
+
