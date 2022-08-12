@@ -22,6 +22,7 @@ btn.addEventListener("click", () => {
 
         newCard.innerHTML = `
         <div class="card">
+            <div id="content-${el_id}">
             <div>
                 <img src="space.jpg" alt="space">
             </div>
@@ -29,6 +30,7 @@ btn.addEventListener("click", () => {
             <div class="card-header">
                 <h2>${x}</h2>
             </div> 
+            </div>
             <div class="btn-container" id="btn-container">
                 <div class="like-container">
                     <button class="like-btn" id="like-${el_id}">Like</button>
@@ -39,11 +41,13 @@ btn.addEventListener("click", () => {
         </div>
         `;
 
-        newCard.addEventListener("click", () => {
+        container.appendChild(newCard);
+
+        let content = document.getElementById(`content-${el_id}`);
+
+        content.addEventListener("click", () => {
             updatePopup(x)
         })
-
-        container.appendChild(newCard);
 
         input.value = "";
 
