@@ -28,6 +28,11 @@ input {
     display: flex;
     flex-wrap: wrap;
     padding: 1rem;
+    list-style-type: none;
+}
+
+.card-container ul li{
+    list-style-type: none;
 }
 
 .card {
